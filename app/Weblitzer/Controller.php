@@ -44,11 +44,19 @@ class Controller
      * print_r coké
      * @param  mixed $var La variable a déboger
      */
-    protected function debug($var)
+    protected function dbug($var)
     {
         echo '<pre style="height:100px;overflow-y: scroll;font-size:.8em;padding: 10px; font-family: Consolas, Monospace; background-color: #000; color: #fff;">';
         print_r($var);
         echo '</pre>';
+    }
+    
+    protected function dd($var)
+    {
+        echo '<pre style="height:100px;overflow-y: scroll;font-size:.8em;padding: 10px; font-family: Consolas, Monospace; background-color: #000; color: #fff;">';
+        print_r($var);
+        echo '</pre>';
+        die();
     }
 
     /**
@@ -78,12 +86,12 @@ class Controller
     protected function redirect($url,$args = array())
     {
         $view = new View();
-        if(!empty($args)) {
-            $realurl = $view->path($url,$args);
-        } else {
-            $realurl = $view->path($url);
-        }
-        header('Location: '.$realurl);
+        // if(!empty($args)) {
+        //     $realurl = $view->path($url,$args);
+        // } else {
+        //     $realurl = $view->path($url);
+        // }
+        header('Location: '.$url);
         die();
     }
 
