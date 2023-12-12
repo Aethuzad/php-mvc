@@ -1,8 +1,8 @@
 <?php
 
-$routes = array(
-    array('home','default','index')
-);
+$routes = [
+    ['home','default','index'],
+];
 
 
 
