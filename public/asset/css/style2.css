@@ -19,6 +19,7 @@
     align-items: center;
     text-align: center;
     transition: transform 0.3s ease;
+    padding: 1rem;
 }
 
 .card:hover {
@@ -33,4 +34,43 @@ h1 {
     font-weight: bold;
     color: #333;
     text-align: center;
+}
+
+.card-body a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.card-body a:hover {
+    color: #c18b39;
+}
+
+.articlos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(153, 180, 153, 0.32);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

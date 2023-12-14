@@ -9,13 +9,14 @@
     
     <div class="cards">
         <h1>Articles</h1>
+        <p>Nombre d'articles : <?= $count?></p>
         <div class="card-body">
             <?php
             foreach ($articles as $article) {
                 ?>
+                <a href="<?= $view->path('article', [$article->id]); ?>">
                 <div class="card">
-                    <h1><?= "ID : " . $article->id?></h1>
-                    <h2><?= "Titre : " . $article->title?></h2>
+                    <p><?= "Titre : " . $article->title?></p>
                     <p><?= "Contenu : " . $article->content?></p>
                     <p><?= "Date : " . $article->createdAt?></p>
                     <!-- <p></?= "Auteur : " . $article->author?></p> -->
@@ -25,6 +26,7 @@
                     </p>
                     <hr>
                 </div>
+                </a>
                 <?php
             }
             ?>
