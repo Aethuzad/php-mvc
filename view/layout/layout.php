@@ -12,13 +12,13 @@
 
     <header>
       <nav>
-          <ul>
-              <li><a href="<?= $view->path('home'); ?>">Home</a></li>
-              <li><a href="<?= $view->path('articles'); ?>">Articles</a></li>
-              <li><a href="<?= $view->path('contact'); ?>">Contact</a></li>
-              <li><a href="<?= $view->path('about'); ?>">About</a></li>
-              <li><a href="<?= $view->path('add'); ?>">Ajouter un article</a></li>
-              <li><a href="<?= $view->path('docphp'); ?>">Documentation PHP</a></li>
+          <ul id="nav">
+              <li class="nav-link"><a data-name="home" href="<?= $view->path('home'); ?>"></a></li>
+              <li class="nav-link"><a data-name="articles" href="<?= $view->path('articles'); ?>"></a></li>
+              <li class="nav-link"><a data-name="contact" href="<?= $view->path('contact'); ?>"></a></li>
+              <li class="nav-link"><a data-name="about" href="<?= $view->path('about'); ?>"></a></li>
+              <li class="nav-link"><a data-name="Ajouter un article" href="<?= $view->path('add'); ?>"></a></li>
+              <li class="nav-link"><a data-name="Documentation PHP" href="<?= $view->path('docphp'); ?>"></a></li>
               <!-- <li><a href="</?= $view->path('single',array(12)); ?>">Single</a></li>
               <li><a href="</?= $view->path('single2',array(12,'dedede')); ?>">Single2</a></li> -->
           </ul>
