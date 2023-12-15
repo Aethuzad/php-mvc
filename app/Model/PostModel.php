@@ -1,6 +1,9 @@
 <?php /* app/Model/CommentModel.php */
 namespace App\Model;
-class   PostModel extends \App\Weblitzer\Model 
+
+use App\Weblitzer\Model;
+
+class   PostModel extends Model
 {
     protected static $table = 'post';
 
