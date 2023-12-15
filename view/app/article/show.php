@@ -8,5 +8,6 @@
     </p>
     <p>
         <a href="<?=$view->path('delete',[$article->id]);?>" class="btn">Supprimer</a>
+        <a href="<?=$view->path('edit',[$article->id]);?>" class="btn">Éditer</a>
     </p>
 </div>
